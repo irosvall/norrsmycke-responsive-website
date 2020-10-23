@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* ------ Grundstilen för sidorna ----- */
+
+html {
+    font-size: 16px;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Ta bort inbyggda marginaler och ändra box-sizing */
+html, body, nav, header, main, aside, footer, section, div, figure {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------ NAV STYLES ----- */
+nav {
+    display: flex;
+    justify-content: right;
+    padding: 4px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+#menuicon {
+    display: inline-block;
+    background-image: url(../img/hamburgermenu.png);
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+#shoppingCart img {
+    width: 32px;
+}
+
+#menucheckbox {
+    display: none;
+}
+
+#menucheckbox ~ ul {
+    transform: scaleY(0);
+    transition: 0.8s;
+    transform-origin: top;
+    position: absolute;
+    top: 37px;
+    display: flex;
+    flex-direction: column;
+}
+
+#menucheckbox:checked ~ ul {
+    transform: scaleY(1);
+}
