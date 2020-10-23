@@ -21,7 +21,7 @@ html, body, nav, header, main, aside, footer, section, div, figure {
 nav {
     background-color: rgb(225, 240, 220);
     display: flex;
-    justify-content: right;
+    justify-content: end;
     padding: 4px;
     gap: 5px;
 }
