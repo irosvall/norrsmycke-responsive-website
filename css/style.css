@@ -92,6 +92,25 @@ nav li {
     transform: scaleY(1);
 }
 
+/* ------ HEADER STYLES ----- */
+
+#homepageHeader {
+    text-align: center;
+    background-image: url(../img/trees-banner.jpg);
+    background-size: cover;
+    
+    background-position: center;
+    height: 120px;
+}
+
+#homepageHeader h1 {
+    margin: 0;
+    padding: 15px;
+    font-size: 2.3em;
+}
+
+/* ------ FONT STYLES ----- */
+
 /* ------ LINK STYLES ----- */
 a {
     text-decoration: none;
