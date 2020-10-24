@@ -100,22 +100,21 @@ nav li {
 /* ------ HEADER STYLES ----- */
 
 #homepageHeader {
-    text-align: center;
     background-image: url(../img/trees-banner.jpg);
     background-size: cover;
-    
     background-position: center;
     height: 120px;
 }
 
-#homepageHeader h1 {
+/* ------ FONT STYLES ----- */
+
+h1 {
+    text-align: center;
     margin: 0;
     padding: 15px;
     font-size: 2em;
     font-weight: 600;
 }
-
-/* ------ FONT STYLES ----- */
 
 h2 {
     font-size: 1.15em;
@@ -130,4 +129,26 @@ a {
 
 img {
     max-width: 100%;
+}
+
+/* ------ LIST STYLES ----- */
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+#localnav a {
+    font-size: 1.1em;
+    padding: 6px;
+    display: block;
+    border-bottom: solid 1.5px #000000;
+}
+
+#localnav a:link, #localnav a:visited {
+    color: #000000;
 }
