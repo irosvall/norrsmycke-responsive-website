@@ -174,9 +174,13 @@ li {
 }
 
 #produkter a {
-    display: inline-block;
+    display: none;
     padding-left: 15px;
     margin-right: auto;
+}
+
+#produkter a:link, #produkter a:visited {
+    color: rgb(53, 53, 138);
 }
 
 #produkter a img {
@@ -191,4 +195,10 @@ li {
 
 #produkter p {
     margin: 8px 10px 10px 10px
+}
+
+@media screen and (min-width: 278px) {
+    #produkter a {
+        display: inline-block;
+    }
 }
