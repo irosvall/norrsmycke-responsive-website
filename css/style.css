@@ -4,6 +4,7 @@
 
 html {
     font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html, body {
@@ -15,6 +16,11 @@ html, body, nav, header, main, aside, footer, section, div, figure {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+main {
+    color: #000000;
+    margin: 0 7px
 }
 
 /* ------ NAV STYLES ----- */
@@ -40,7 +46,7 @@ nav li {
 }
 
 #homepageNav a {
-    font-size: 1.5em;
+    font-size: 1.4em;
     padding-left: 5px;
     color: #000000;
 }
@@ -77,7 +83,6 @@ nav li {
 }
 
 #menucheckbox ~ ul {
-    
     transform: scaleY(0);
     transition: 0.6s;
     transform-origin: top;
@@ -106,12 +111,23 @@ nav li {
 #homepageHeader h1 {
     margin: 0;
     padding: 15px;
-    font-size: 2.3em;
+    font-size: 2em;
+    font-weight: 600;
 }
 
 /* ------ FONT STYLES ----- */
 
+h2 {
+    font-size: 1.15em;
+}
+
 /* ------ LINK STYLES ----- */
 a {
     text-decoration: none;
+}
+
+/* ------ PICTURE STYLES ----- */
+
+img {
+    max-width: 100%;
 }
