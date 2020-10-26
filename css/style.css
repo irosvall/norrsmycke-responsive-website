@@ -172,7 +172,7 @@ li {
 
 /* ------ FORM STYLES ----- */
 
-#kontakt fieldset {
+fieldset {
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -180,7 +180,7 @@ li {
     font-size: 0.9em;
 }
 
-#kontakt label, #kontakt input {
+fieldset label, fieldset input {
     padding: 7px;
 }
 
@@ -205,6 +205,36 @@ li {
 
 p#mandatory {
     font-size: 0.9em;
+}
+
+#order {
+    background-color: rgb(255, 255, 255);
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+#order fieldset {
+    margin-bottom: 20px;
+}
+
+#order #terms {
+    font-size: 0.9em;
+}
+
+#order #send {
+    margin: 20px;
+    text-align: right;
+}
+
+#order #send input {
+    font-size: 1.2em;
+    padding: 5px 10px;
+}
+
+#terms a:link, #terms a:visited {
+    border-bottom: solid 1px #000000;
+    color: #000000;
 }
 
 /* ------ PRODUCTS STYLE ----- */
