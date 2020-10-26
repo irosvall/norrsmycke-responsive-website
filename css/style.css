@@ -167,10 +167,9 @@ li {
 }
 
 #produkter figure {
-    max-width: 100%;
     background-color: rgb(255, 255, 255);
     flex: 1 0 240px;
-    
+    max-width: 500px;
 }
 
 #produkter a {
