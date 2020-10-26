@@ -20,7 +20,7 @@ html, body, nav, header, main, aside, footer, section, div, figure {
 
 main {
     color: #000000;
-    margin: 0 7px
+    padding: 0 7px 20px 7px;
 }
 
 body {
