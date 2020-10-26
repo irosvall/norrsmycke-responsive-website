@@ -52,12 +52,14 @@ nav li {
 #homepageNav a {
     font-size: 1.4em;
     padding-left: 5px;
-    color: #000000;
 }
+
+nav a:link, nav a:visited {
+    color: #000000;
+} 
 
 #globalnav a {
     background-color: #e9deda;
-    color: #000000;
     font-size: 1.3em;
     text-align: left;
     display: block;
@@ -93,11 +95,11 @@ nav li {
     position: absolute;
     top: 42px;
     right: 0px;
-    display: flex;
-    flex-direction: column;
 }
 
 #menucheckbox:checked ~ ul {
+    display: flex;
+    flex-direction: column;
     transform: scaleY(1);
 }
 
