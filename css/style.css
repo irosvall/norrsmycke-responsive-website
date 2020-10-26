@@ -246,6 +246,32 @@ p#mandatory {
     margin: 8px 10px 10px 10px
 }
 
+/* ------ SHOPPING CART STYLES ----- */
+
+#varukorg {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 8px;
+    max-width: min-content;
+    text-align: left;
+}
+
+#varukorg p {
+    text-align: right;
+}
+
+#varukorg table {
+    width: 400px;
+    max-width: 100%;
+    border-bottom: solid 2px #000000;
+}
+
+#varukorg td, #varukorg th {
+    padding: 5px 0;
+}
+
+/* ------ MEDIA QUERIES ----- */
+
 @media screen and (min-width: 278px) {
     #produkter a {
         display: inline-block;
