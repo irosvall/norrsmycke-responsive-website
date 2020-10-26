@@ -157,6 +157,43 @@ li {
     color: #000000;
 }
 
+/* ------ FORM STYLES ----- */
+
+#kontakt fieldset {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+#kontakt label, #kontakt input {
+    padding: 7px;
+}
+
+#kontakt #email {
+    margin-bottom: 20px;
+}
+
+#kontakt #message {
+    resize: vertical;
+}
+
+#kontakt #send {
+    text-align: end;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+#kontakt #send input {
+    font-size: 1.2em;
+    padding: 5px 18px;
+}
+
+p#mandatory {
+    font-size: 0.9em;
+}
+
 /* ------ PRODUCTS STYLE ----- */
 
 #produkter {

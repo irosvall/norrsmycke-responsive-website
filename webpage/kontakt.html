@@ -29,5 +29,29 @@
             <li><a href="villkor.html">Villkor</a></li>
         </ul>
     </nav>
+    <header>
+        <h1>Kontakta oss</h1>
+    </header>
+    <main>
+        <p>Fyll i formuläret nedan för att komma i kontakt med oss. Vi hjälper gärna till.</p>
+        <p id="mandatory">* Obligatoriska fält</p>
+        <form id="kontakt" method="POST" data-netlify="true">
+            <fieldset>
+                <label for="firstname">* Förnamn</label>
+                <input type="text" name="firstname" id="firstname">
+                <label for="lastname">* Efternamn</label>
+                <input type="text" name="lastname" id="lastname">
+                <label for="email">* E-mail</label>
+                <input type="email" name="email" id="email">
+                <label for="subject">* Ämne</label>
+                <input type="text" name="subject" id="subject">
+                <label for="message">* Meddelande</label>
+                <textarea name="message" id="message" cols="30" rows="12"></textarea>
+            </fieldset>
+            <div id="send">
+                <input type="submit" value="Skicka">
+            </div>
+        </form>
+    </main>
 </body>
 </html>
