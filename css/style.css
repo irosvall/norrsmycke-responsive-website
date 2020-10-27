@@ -114,6 +114,34 @@ nav a:link, nav a:visited {
     height: 140px;
 }
 
+/* ------ FOOTER STYLES ----- */
+
+footer {
+    background-color: #e9deda;
+    padding: 8px;
+}
+
+footer p {
+    color: #1f3042;
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 0;
+    padding-top: 5px;
+    border-top: solid 1px #2436499f;
+}
+
+footer li {
+    padding: 0.3em;
+}
+
+footer a:link, footer a:visited {
+    color: #1f3042;
+}
+
+footer a:hover, footer a:active {
+    color: #3f5268;
+}
+
 /* ------ FONT STYLES ----- */
 
 h1 {
@@ -128,6 +156,10 @@ h1 {
 h2 {
     color: #2e455e;
     font-size: 1.15em;
+}
+
+main p {
+    line-height: 1.5em;
 }
 
 /* ------ LINK STYLES ----- */
