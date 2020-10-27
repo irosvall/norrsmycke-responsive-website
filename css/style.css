@@ -219,6 +219,10 @@ fieldset label, fieldset input {
     padding: 7px;
 }
 
+#kontakt input {
+    max-width: 60ch;
+}
+
 #kontakt #email {
     margin-bottom: 20px;
 }
@@ -323,6 +327,7 @@ p#mandatory {
     padding: 10px;
     border-radius: 8px;
     text-align: left;
+    max-width: 480px;
 }
 
 #varukorg p {
@@ -390,6 +395,10 @@ p#mandatory {
     .gridleft, .gridright {
         margin-bottom: 20px;
     }
+
+    footer ul {
+        margin-left: 0.8em;
+    }
 }
 
 @media screen and (min-width: 700px) {
@@ -405,6 +414,21 @@ p#mandatory {
 
     h2 {
         font-size: 1.4em;
+    }
+
+    .gridvarukorg {
+        display: grid;
+        grid-template-columns: 1.7fr 1fr;
+        grid-template-areas: 
+            "gridleft gridright";
+    }
+
+    #order {
+        margin-top: 0;
+    }
+
+    #varukorg {
+        height: max-content;
     }
 }
 
@@ -456,8 +480,6 @@ p#mandatory {
 }
 
 @media screen and (min-width: 851px) {
-    
-
     h2 {
         padding: 0.5em 0;
     }
@@ -466,6 +488,16 @@ p#mandatory {
 @media screen and (min-width: 940px) {
     .gridleft p, .gridright p {
         font-size: 1.1em;
+    }
+
+    #about p {
+        margin: 15px auto;
+        text-align: center;
+        max-width: 840px;
+    }
+
+    #aboutList {
+        text-align: center;
     }
 }
 
@@ -485,5 +517,15 @@ p#mandatory {
     #menucheckbox ~ ul {
         gap: 50px;
         margin-right: 50px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #homepageHeader {
+        height: 380px;
+    }
+
+    #homepageHeader h1 {
+        font-size: 3em;
     }
 }

@@ -33,73 +33,75 @@
         <h1>Varukorg</h1>
     </header>
     <main>
-        <div id="varukorg">
-            <h2>Din beställning</h2>
-            <table>
-                <tr>
-                    <th>Produkter</th>
-                    <th>Pris</th>
-                </tr>
-                <tr>
-                    <td>Produkt 1</td>
-                    <td>500.00 KR</td>
-                </tr>
-                <tr>
-                    <td>Produkt 2</td>
-                    <td>650.00 KR</td>
-                </tr>
-                <tr>
-                    <td>Frakt</td>
-                    <td>50.00 KR</td>
-                </tr>
-            </table>
-            <p>Totalt: 1200.00 KR</p>
-        </div>
-        <div id="order">
-            <h2>Beställning</h2>
-            <p id="mandatory">* Obligatoriska fält</p>
-        <form id="orderform" method="POST" data-netlify="true">
-            <fieldset>
-                <legend>Leveransadress</legend>
-                <label for="firstname">* Förnamn</label>
-                <input type="text" name="firstname" id="firstname" required>
-                <label for="lastname">* Efternamn</label>
-                <input type="text" name="lastname" id="lastname" required>
-                <label for="address">* Gatuadress</label>
-                <input type="text" name="address" id="address" required>
-                <label for="zip">* Postnummer</label>
-                <input type="text" name="zip" id="zip" required>
-                <label for="city">* Ort</label>
-                <input type="text" name="city" id="city" required>
-            </fieldset>
-            <fieldset>
-                <legend>Kontaktuppgifter</legend>
-                <label for="email">* E-mail</label>
-                <input type="text" name="email" id="email" required>
-                <label for="phone">Telefonnummer</label>
-                <input type="text" name="phone" id="phone">  
-            </fieldset>
-            <fieldset>
-                <legend>Välj betalsätt</legend>
-                <label>
-                    <input type="radio" name="pay-method" checked="checked"> Faktura
-                </label> 
-                <label>
-                    <input type="radio" name="pay-method"> Kreditkort
-                </label>
-                <label>
-                    <input type="radio" name="pay-method"> PayPal
-                </label>
-            </fieldset>
-            <div id="terms">
-                <label>
-                    <input type="checkbox" name="acceptTerms" required> Jag accepterar <a href="villkor.html">köpvillkoren</a> 
-                </label>
+        <div class="gridvarukorg">
+            <div id="varukorg" class="gridright">
+                <h2>Din beställning</h2>
+                <table>
+                    <tr>
+                        <th>Produkter</th>
+                        <th>Pris</th>
+                    </tr>
+                    <tr>
+                        <td>Produkt 1</td>
+                        <td>500.00 KR</td>
+                    </tr>
+                    <tr>
+                        <td>Produkt 2</td>
+                        <td>650.00 KR</td>
+                    </tr>
+                    <tr>
+                        <td>Frakt</td>
+                        <td>50.00 KR</td>
+                    </tr>
+                </table>
+                <p>Totalt: 1200.00 KR</p>
             </div>
-            <div id="send">
-                <input type="submit" value="Beställ">
+            <div id="order" class="gridleft">
+                <h2>Beställning</h2>
+                <p id="mandatory">* Obligatoriska fält</p>
+            <form id="orderform" method="POST" data-netlify="true">
+                <fieldset>
+                    <legend>Leveransadress</legend>
+                    <label for="firstname">* Förnamn</label>
+                    <input type="text" name="firstname" id="firstname" required>
+                    <label for="lastname">* Efternamn</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                    <label for="address">* Gatuadress</label>
+                    <input type="text" name="address" id="address" required>
+                    <label for="zip">* Postnummer</label>
+                    <input type="text" name="zip" id="zip" required>
+                    <label for="city">* Ort</label>
+                    <input type="text" name="city" id="city" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Kontaktuppgifter</legend>
+                    <label for="email">* E-mail</label>
+                    <input type="text" name="email" id="email" required>
+                    <label for="phone">Telefonnummer</label>
+                    <input type="text" name="phone" id="phone">  
+                </fieldset>
+                <fieldset>
+                    <legend>Välj betalsätt</legend>
+                    <label>
+                        <input type="radio" name="pay-method" checked="checked"> Faktura
+                    </label> 
+                    <label>
+                        <input type="radio" name="pay-method"> Kreditkort
+                    </label>
+                    <label>
+                        <input type="radio" name="pay-method"> PayPal
+                    </label>
+                </fieldset>
+                <div id="terms">
+                    <label>
+                        <input type="checkbox" name="acceptTerms" required> Jag accepterar <a href="villkor.html">köpvillkoren</a> 
+                    </label>
+                </div>
+                <div id="send">
+                    <input type="submit" value="Beställ">
+                </div>
+            </form>
             </div>
-        </form>
         </div>
     </main>
     <footer>
