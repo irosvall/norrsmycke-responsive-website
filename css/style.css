@@ -309,6 +309,36 @@ p#mandatory {
     padding: 5px 0;
 }
 
+/* ------ START PAGE STYLES ----- */
+
+#startPage h1 {
+    margin-top: 1em;
+}
+
+#startPage h2 {
+    text-align: center;
+}
+
+#startPage ul {
+    text-align: center;
+    margin: 4em 0;
+}
+
+#startPage a {
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #e9deda;
+    display: block;
+    padding: 25px;
+    margin: 2em auto;
+    max-width: 150px;
+    border-radius: 12px;
+}
+
+#startPage a:link, #startPage a:visited {
+    color: #1f3042;
+}
+
 /* ------ MEDIA QUERIES ----- */
 
 @media screen and (min-width: 600px) {
