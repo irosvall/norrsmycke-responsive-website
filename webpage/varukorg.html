@@ -58,7 +58,7 @@
         <div id="order">
             <h2>Beställning</h2>
             <p id="mandatory">* Obligatoriska fält</p>
-        <form id="order" method="POST" data-netlify="true">
+        <form id="orderform" method="POST" data-netlify="true">
             <fieldset>
                 <legend>Leveransadress</legend>
                 <label for="firstname">* Förnamn</label>
@@ -66,18 +66,18 @@
                 <label for="lastname">* Efternamn</label>
                 <input type="text" name="lastname" id="lastname" required>
                 <label for="address">* Gatuadress</label>
-                <input type="address" name="address" id="address" required>
+                <input type="text" name="address" id="address" required>
                 <label for="zip">* Postnummer</label>
-                <input type="zip" name="zip" id="zip" required>
+                <input type="text" name="zip" id="zip" required>
                 <label for="city">* Ort</label>
-                <input type="city" name="city" id="city" required>
+                <input type="text" name="city" id="city" required>
             </fieldset>
             <fieldset>
                 <legend>Kontaktuppgifter</legend>
                 <label for="email">* E-mail</label>
-                <input type="email" name="email" id="email" required>
+                <input type="text" name="email" id="email" required>
                 <label for="phone">Telefonnummer</label>
-                <input type="phone" name="phone" id="phone">  
+                <input type="text" name="phone" id="phone">  
             </fieldset>
             <fieldset>
                 <legend>Välj betalsätt</legend>
