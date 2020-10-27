@@ -33,7 +33,22 @@
         <h1>Om oss</h1>
     </header>
     <main>
-        <img src="../img/portrait-old.jpg" alt="porträtt">
+        <picture>
+            <source media="(max-width: 400px)" 
+                    srcset="../img/portrait-min-400px.jpg 400w,
+                            ../img/portrait-min-800px.jpg 800w,
+                            ../img/portrait-min-1200px.jpg 1200w">
+            <source media="(max-width: 720px)" 
+                    srcset="../img/portrait-small-600px.jpg 600w,
+                            ../img/portrait-small-800px.jpg 800w,
+                            ../img/portrait-small-1200px.jpg 1200w,
+                            ../img/portrait-small-1600px.jpg 1600w">
+            <img src="../img/portrait-big-800px.jpg" alt="porträtt"
+                 srcset="../img/portrait-big-800px.jpg 800w,
+                         ../img/portrait-big-1100px.jpg 1100w,
+                         ../img/portrait-big-1600px.jpg 1600w,
+                         ../img/portrait-big-2200px.jpg 2200w">
+        </picture>
         <p>
             Bakom Norrsmycke finns Marit och Bengt Ängelholm som båda smider smycken. I början var det en hobby, men efter förfrågan startade de denna webbshop. Deras vision är att tillverka smycken av högkvalité från material utvinna från norra Sverige. De vill gynna den norra landsbygden, som de själva växt upp i, och ge något tillbaka.
         </p>
