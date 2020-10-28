@@ -199,14 +199,16 @@ li {
 }
 
 #localnav a {
-    font-size: 1.1em;
-    padding: 6px;
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 10px 6px;
     display: block;
-    border-bottom: solid 1.5px #000000;
+    border-bottom: solid 2px #172535c0;
 }
 
 #localnav a:link, #localnav a:visited {
-    color: #000000;
+    color: #172535;
 }
 
 /* ------ FORM STYLES ----- */
@@ -307,7 +309,11 @@ p#mandatory {
 }
 
 #produkter a:link, #produkter a:visited {
-    color: rgb(53, 53, 138);
+    color: #1f3042;
+}
+
+#produkter a:hover, #produkter a:active {
+    color: #3f5268;
 }
 
 #produkter a img {
@@ -378,6 +384,33 @@ p#mandatory {
 }
 
 /* ------ MEDIA QUERIES ----- */
+
+@media screen and (min-width: 455px) {
+    #localnav {
+        margin: 30px 0 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #localnav li {
+        align-self: flex-start;
+    }
+
+    #localnav a {
+        text-align: center;
+        margin: 0;
+        background-color: #e9deda;
+        padding: 10px;
+        border-bottom: none;
+        width: 120px;
+    }
+
+    #localnav a:hover, #localnav a:active {
+        background-color: #f1eae8;
+    }
+}
 
 @media screen and (min-width: 600px) {
     .grid {
@@ -508,6 +541,16 @@ p#mandatory {
 
     #aboutList {
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #localnav {
+        gap: 30px;
+    }
+
+    #localnav a {
+        padding: 15px;
     }
 }
 
