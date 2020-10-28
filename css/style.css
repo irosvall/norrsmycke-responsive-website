@@ -305,7 +305,6 @@ p#mandatory {
 #produkter a {
     display: inline-block;
     padding-left: 15px;
-    margin-right: auto;
 }
 
 #produkter a:link, #produkter a:visited {
@@ -327,6 +326,9 @@ p#mandatory {
 }
 
 #produkter p {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     margin: 8px 10px 10px 10px
 }
 
