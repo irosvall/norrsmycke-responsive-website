@@ -433,9 +433,16 @@ p#mandatory {
     font-weight: 600;
     display: inline-block;
     background-color: #3f5268;
-    color: #ffffff;
     padding: 15px;
     margin-top: 5px;
+}
+
+#product #addCart a:link, #product #addCart a:visited {
+    color: #ffffff;
+}
+
+#product #addCart a:hover, #product #addCart a:active {
+    background-color: #4f6074;
 }
 
 /* ------ MEDIA QUERIES ----- */
