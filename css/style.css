@@ -131,14 +131,6 @@ footer li {
     padding: 0.3em;
 }
 
-footer a:link, footer a:visited {
-    color: #1f3042;
-}
-
-footer a:hover, footer a:active {
-    color: #3f5268;
-}
-
 /* ------ FONT STYLES ----- */
 
 h1 {
@@ -166,6 +158,14 @@ main p {
 /* ------ LINK STYLES ----- */
 a {
     text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #1f3042;
+}
+
+a:hover, a:active {
+    color: #3f5268;
 }
 
 /* ------ PICTURE STYLES ----- */
@@ -458,6 +458,24 @@ p#mandatory {
 
 #product #addCart a:hover, #product #addCart a:active {
     background-color: #4f6074;
+}
+
+/* ------ THANKS PAGE STYLES ----- */
+
+#tack .wrapper {
+    background-color: #ffffff;
+    padding: 2em;
+    margin: 150px auto;
+    max-width: 550px;
+    border-radius: 10px;
+}
+
+#tack p {
+    margin-bottom: 3em;
+}
+
+#tack h2 {
+    text-align: center;
 }
 
 /* ------ MEDIA QUERIES ----- */
