@@ -244,6 +244,10 @@ fieldset label, fieldset input {
     margin-bottom: 2em;
 }
 
+#mainkontakt div span {
+    font-size: 0.85em;
+}
+
 #kontakt input {
     max-width: 60ch;
 }
