@@ -310,7 +310,7 @@ p#mandatory {
     max-width: 500px;
 }
 
-#produkter a {
+#produkter p a {
     display: inline-block;
     padding-left: 15px;
 }
